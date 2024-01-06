@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(void){
+    int n;
+    enum {Hololive, Nijisanji};
+    //Hololive←0
+    //Nijisanji←1
+    printf("Hololive(0) or Nijisanji(1)？：");
+    scanf("%d", &n);
+    switch(n) {
+        //nがHololiveの場合
+        case Hololive:
+            printf("→Hololive\n");
+            break;
+        //nがNijisanjiの場合
+        case Nijisanji:
+            printf("→Nijisanji\n");
+            break;
+        //nがHololiveでもNijisanjiでもない場合
+        default:
+            printf("0か1を入力してください\n");
+    }
+    return 0;
+}
